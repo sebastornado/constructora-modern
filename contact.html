@@ -1,0 +1,286 @@
+### Plantilla base para todas las páginas
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Soluciones de Construcción Integral</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Page Specific CSS -->
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h1>Constructora <span>Modern</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Nuestro Trabajo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido específico de la página -->
+  <main>
+
+<!-- Contact Info -->
+<section class="contact-info section-padding">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Contacto</h1>
+        <p class="lead">Estamos listos para empezar tu próximo proyecto</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="contact-info-card">
+          <h3>Información de Contacto</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+            <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+            <li><i class="fas fa-envelope"></i> info@constructoramodern.com</li>
+            <li><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+          </ul>
+          
+          <div class="mt-5">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div class="col-lg-7">
+        <div class="contact-form-card">
+          <div class="card-header bg-primary-light text-white p-4">
+            <h3 class="mb-0">Envía un Mensaje</h3>
+            <p class="mb-0">Responderemos en menos de 24 horas</p>
+          </div>
+          
+          <div class="card-body p-4">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group floating-label">
+                    <input type="text" class="form-control" id="name" required>
+                    <label for="name">Nombre Completo *</label>
+                    <div class="invalid-feedback">Por favor ingresa tu nombre</div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                  <div class="form-group floating-label">
+                    <input type="email" class="form-control" id="email" required>
+                    <label for="email">Correo Electrónico *</label>
+                    <div class="invalid-feedback">Por favor ingresa un email válido</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group floating-label">
+                    <input type="tel" class="form-control" id="phone">
+                    <label for="phone">Teléfono</label>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                  <div class="form-group floating-label">
+                    <input type="text" class="form-control" id="subject" required>
+                    <label for="subject">Asunto *</label>
+                    <div class="invalid-feedback">Por favor ingresa el asunto</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <div class="form-group floating-label">
+                  <textarea class="form-control" id="message" rows="4" required></textarea>
+                  <label for="message">Tu Mensaje *</label>
+                  <div class="invalid-feedback">Por favor ingresa tu mensaje</div>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="privacy" required>
+                  <label class="form-check-label" for="privacy">
+                    Acepto la <a href="#" class="text-primary">política de privacidad</a> *
+                  </label>
+                  <div class="invalid-feedback">Debes aceptar la política de privacidad</div>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                <span class="submit-text">Enviar Mensaje</span>
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<!-- Branches -->
+<section class="branches section-padding bg-light">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nuestras Oficinas</h2>
+      <p>Visítanos en cualquiera de nuestras ubicaciones</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="branch-card">
+          <h3>Ciudad Central</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</p>
+          <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+          <p><i class="fas fa-envelope"></i> central@constructoramodern.com</p>
+          <p><i class="fas fa-clock"></i> L-V: 9am-6pm</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="branch-card">
+          <h3>Zona Norte</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Calle Norte 456, Ciudad</p>
+          <p><i class="fas fa-phone"></i> +1 (234) 567-891</p>
+          <p><i class="fas fa-envelope"></i> norte@constructoramodern.com</p>
+          <p><i class="fas fa-clock"></i> L-V: 8am-5pm</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="branch-card">
+          <h3>Zona Sur</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Av. Sur 789, Ciudad</p>
+          <p><i class="fas fa-phone"></i> +1 (234) 567-892</p>
+          <p><i class="fas fa-envelope"></i> sur@constructoramodern.com</p>
+          <p><i class="fas fa-clock"></i> L-V: 10am-7pm</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          <div class="branch-map mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.52763182402574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1624966484766!5m2!1sen!2sng" 
+                    style="border:0; width: 100%; height: 200px;" allowfullscreen loading="lazy"></iframe>
+          </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3>Constructora Modern</h3>
+          <p>Construyendo futuros con calidad y compromiso desde 1990.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+
+            <li><a href="projects.html">Nuestro Trabajo</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Contacto</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+            <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+            <li><i class="fas fa-envelope"></i> info@constructoramodern.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 Constructora Modern. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Diseñado con <i class="fas fa-heart text-danger"></i> por Sebastian Torres</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

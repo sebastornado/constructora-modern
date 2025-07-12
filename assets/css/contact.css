@@ -1,0 +1,157 @@
+/* ===== MEJORAS VISUALES PARA CONTACTO ===== */
+
+/* Tarjeta de información */
+.contact-info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.contact-info-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  z-index: 2;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(242, 101, 34, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-details li {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.contact-details li:last-child {
+  border-bottom: none;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bg-primary-light {
+  background: rgba(242, 101, 34, 0.8) !important;
+}
+
+/* Tarjeta de formulario */
+.contact-form-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card-header {
+  border-radius: 0 !important;
+}
+
+/* Formulario con etiquetas flotantes */
+.form-group.floating-label {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group.floating-label label {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: var(--gray);
+}
+
+.form-group.floating-label .form-control:focus ~ label,
+.form-group.floating-label .form-control:not(:placeholder-shown) ~ label {
+  top: -12px;
+  left: 10px;
+  font-size: 12px;
+  background: white;
+  padding: 0 5px;
+  color: var(--primary);
+}
+
+.form-group.floating-label textarea ~ label {
+  top: 20px;
+}
+
+.form-group.floating-label textarea:focus ~ label,
+.form-group.floating-label textarea:not(:placeholder-shown) ~ label {
+  top: -12px;
+}
+
+/* Iconos sociales con colores de marca */
+.social-link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+  color: white !important;
+  font-size: 18px;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+}
+
+.bg-facebook { background: #3b5998; }
+.bg-twitter { background: #1da1f2; }
+.bg-instagram { background: #e1306c; }
+.bg-linkedin { background: #0077b5; }
+
+/* Tarjetas de ubicación */
+.branch-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.branch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.branch-map {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.branch-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.branch-details li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}

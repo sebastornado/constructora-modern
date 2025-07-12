@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Constructora Modern - Más de 25 años construyendo sueños. Especialistas en proyectos residenciales, comerciales y de infraestructura.">
+    <meta name="keywords" content="construcción, constructoras, proyectos, viviendas, infraestructura, arquitectura">
+    <title>Constructora Modern | Soluciones de Construcción Integral</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Constructora Modern | Soluciones de Construcción Integral">
+    <meta property="og:description" content="Más de 25 años construyendo sueños. Calidad, compromiso y profesionalismo en cada proyecto.">
+    <meta property="og:image" content="https://constructoramodern.com/assets/img/home/og-image.jpg">
+    <meta property="og:url" content="https://constructoramodern.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org para empresa de construcción -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ConstructionBusiness",
+        "name": "Constructora Modern",
+        "image": "https://constructoramodern.com/assets/img/logo.jpg",
+        "@id": "https://constructoramodern.com",
+        "url": "https://constructoramodern.com",
+        "telephone": "+1 (234) 567-890",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Principal 123",
+            "addressLocality": "Ciudad",
+            "addressRegion": "Región",
+            "postalCode": "12345",
+            "addressCountry": "ES"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.416775,
+            "longitude": -3.703790
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        }
+    }
+    </script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Av. Principal 123, Ciudad</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p><i class="fas fa-phone me-2"></i> +1 (234) 567-890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1>Constructora <span>Modern</span></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Nuestro Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slider-item">
+                    <picture>
+                        <source srcset="assets/img/home/slide1.webp" type="image/webp">
+                        <source srcset="assets/img/home/slide1.jpg" type="image/jpeg">
+                        <img src="assets/img/home/slide1.jpg" alt="Proyecto Residencial" class="slider-img" loading="lazy">
+                    </picture>
+                    <div class="slider-caption">
+                        <h2>Construyendo Futuros</h2>
+                        <p>Calidad, compromiso y profesionalismo en cada proyecto</p>
+                        <a href="#" class="btn btn-primary">Nuestros Servicios</a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <picture>
+                        <source srcset="assets/img/home/slide2.webp" type="image/webp">
+                        <source srcset="assets/img/home/slide2.jpg" type="image/jpeg">
+                        <img src="assets/img/home/slide2.jpg" alt="Proyecto Comercial" class="slider-img" loading="lazy">
+                    </picture>
+                    <div class="slider-caption">
+                        <h2>Innovación en Construcción</h2>
+                        <p>Tecnología de punta para resultados excepcionales</p>
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <picture>
+                        <source srcset="assets/img/home/slide3.webp" type="image/webp">
+                        <source srcset="assets/img/home/slide3.jpg" type="image/jpeg">
+                        <img src="assets/img/home/slide3.jpg" alt="Proyecto de Infraestructura" class="slider-img" loading="lazy">
+                    </picture>
+                    <div class="slider-caption">
+                        <h2>Expertos en Soluciones</h2>
+                        <p>Diseño y construcción a la medida de tus necesidades</p>
+                        <a href="contact.html" class="btn btn-primary">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section id="services" class="featured-services section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones integrales para cada proyecto</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="card-title">Construcción Residencial</h3>
+                        <p class="card-text">Diseño y construcción de casas y edificios residenciales con los más altos estándares de calidad.</p>
+                        <a href="#" class="btn btn-outline">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="card-title">Construcción Comercial</h3>
+                        <p class="card-text">Desarrollo de proyectos comerciales, oficinas y espacios corporativos funcionales y modernos.</p>
+                        <a href="#" class="btn btn-outline">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3 class="card-title">Remodelaciones</h3>
+                        <p class="card-text">Transformamos tus espacios existentes para adaptarlos a nuevas necesidades y tendencias.</p>
+                        <a href="#" class="btn btn-outline">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Ver Todos los Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section id="projects" class="projects-showcase section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proyectos Destacados</h2>
+                <p>Algunos de nuestros trabajos recientes</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item" data-category="residencial">
+                    <picture>
+                        <source srcset="assets/img/home/project1.webp" type="image/webp">
+                        <source srcset="assets/img/home/project1.jpg" type="image/jpeg">
+                        <img src="assets/img/home/project1.jpg" alt="Residencia Las Colinas" class="gallery-img" loading="lazy">
+                    </picture>
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Residencia Las Colinas</h3>
+                        <p class="gallery-category">Residencial</p>
+                        <a href="projects.html" class="btn btn-light">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="comercial">
+                    <picture>
+                        <source srcset="assets/img/home/project2.webp" type="image/webp">
+                        <source srcset="assets/img/home/project2.jpg" type="image/jpeg">
+                        <img src="assets/img/home/project2.jpg" alt="Centro Comercial Plaza Mayor" class="gallery-img" loading="lazy">
+                    </picture>
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Centro Comercial Plaza Mayor</h3>
+                        <p class="gallery-category">Comercial</p>
+                        <a href="projects.html" class="btn btn-light">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="renovacion">
+                    <picture>
+                        <source srcset="assets/img/home/project3.webp" type="image/webp">
+                        <source srcset="assets/img/home/project3.jpg" type="image/jpeg">
+                        <img src="assets/img/home/project3.jpg" alt="Remodelación Corporativa" class="gallery-img" loading="lazy">
+                    </picture>
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Remodelación Corporativa</h3>
+                        <p class="gallery-category">Renovación</p>
+                        <a href="projects.html" class="btn btn-light">Ver Detalles</a>
+                    </div>
+                </div>
+           
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-primary">Ver Todos los Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonios</h2>
+                <p>Lo que dicen nuestros clientes</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>"Constructora Modern superó todas nuestras expectativas. El proyecto se entregó a tiempo y dentro del presupuesto. Su atención al detalle y profesionalismo son incomparables."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <picture>
+                                <source srcset="assets/img/home/client1.webp" type="image/webp">
+                                <source srcset="assets/img/home/client1.jpg" type="image/jpeg">
+                                <img src="assets/img/home/client1.jpg" alt="Carlos Mendoza" loading="lazy">
+                            </picture>
+                            <div>
+                                <h4>Kelly Mendoza</h4>
+                                <p>Residencia Las Palmas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>"Trabajar con Constructora Modern fue una experiencia excepcional. Su equipo demostró gran experiencia y resolvió todos los desafíos que surgieron durante el proyecto."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <picture>
+                                <source srcset="assets/img/home/client2.webp" type="image/webp">
+                                <source srcset="assets/img/home/client2.jpg" type="image/jpeg">
+                                <img src="assets/img/home/client2.jpg" alt="Laura Fernández" loading="lazy">
+                            </picture>
+                            <div>
+                                <h4>Laura Fernández</h4>
+                                <p>Oficinas Corporativas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>"La calidad de construcción es sobresaliente. Han demostrado ser una empresa confiable y profesional que cumple con lo prometido. Sin duda los recomendaría para cualquier proyecto."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <picture>
+                                <source srcset="assets/img/home/client3.webp" type="image/webp">
+                                <source srcset="assets/img/home/client3.jpg" type="image/jpeg">
+                                <img src="assets/img/home/client3.jpg" alt="Roberto Vargas" loading="lazy">
+                            </picture>
+                            <div>
+                                <h4>Maria Vargas</h4>
+                                <p>Centro Comercial Vista</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="counter-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3 class="counter" data-count="250">0</h3>
+                        <p>Proyectos Completados</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="counter-item">
+                        <i class="fas fa-users"></i>
+                        <h3 class="counter" data-count="120">0</h3>
+                        <p>Clientes Satisfechos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="counter-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <h3 class="counter" data-count="85">0</h3>
+                        <p>Expertos en Equipo</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-item">
+                        <i class="fas fa-award"></i>
+                        <h3 class="counter" data-count="25">0</h3>
+                        <p>Premios Obtenidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding bg-primary text-white">
+        <div class="container text-center">
+            <h2>¿Listo para comenzar tu proyecto?</h2>
+            <p class="lead">Contáctanos hoy para una consulta gratuita y presupuesto sin compromiso</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Solicitar Presupuesto</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Constructora Modern</h3>
+                    <p>Construyendo futuros con calidad y compromiso desde 1990.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                       
+                        <li><a href="projects.html">Nuestro Trabajo</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@constructoramodern.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 Constructora Modern. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Diseñado con <i class="fas fa-heart text-danger"></i> por Sebastian Torres</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
+    
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.transition = 'opacity 0.5s, visibility 0.5s';
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+            
+            setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+    </script>
+</body>
+</html>

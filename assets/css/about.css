@@ -1,0 +1,87 @@
+/* Estilos específicos para Sobre Nosotros */
+.about-hero {
+    background: linear-gradient(rgba(45, 62, 80, 0.8), url('../img/about/hero-bg.jpg') center/cover;
+    color: white;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.milestone {
+    background: rgba(242, 101, 34, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.milestone h3 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.value-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(242, 101, 34, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.value-icon i {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.team-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 3px solid var(--primary);
+}
+
+.certifications-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.certification-logo {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certification-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
